@@ -1,0 +1,335 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  overflow: hidden;
+}
+
+#page1 {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+}
+#page1::before {
+  content: "";
+  position: absolute;
+  bottom: -78%;
+  padding: 100px;
+  width: 100%;
+  height: 60px;
+  background-color: #2f122e;
+  z-index: 999999999999;
+  overflow: hidden;
+}
+
+.clouds {
+  animation: clouds 400s linear infinite;
+}
+
+@keyframes clouds {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#full-screen {
+  position: relative;
+  width: 100vw;
+  height: 110vh;
+  overflow: hidden;
+}
+
+#full-screen > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.clouds {
+  z-index: 999;
+}
+#bg {
+  z-index: 99;
+}
+#sun {
+  z-index: 99;
+}
+#btm1 {
+  z-index: 999;
+}
+#btm2 {
+  z-index: 9999;
+}
+#btm3 {
+  z-index: 99999;
+}
+#btm4 {
+  z-index: 999999;
+}
+#top1 {
+  z-index: 9999999;
+}
+#top2 {
+  z-index: 99999999;
+}
+#top3 {
+  z-index: 999999999;
+}
+#top4 {
+  z-index: 99999999;
+}
+#top5 {
+  position: absolute;
+  z-index: 999999999999;
+}
+
+#page2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#full-screen1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+}
+
+#text {
+  z-index: 999;
+  position: absolute;
+  color: aliceblue;
+  top: 67%;
+  text-align: center;
+  padding: 120px;
+  width: 65%;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+#text > h5 {
+  font-family: "Robuck Regular";
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 4em;
+  color: #cb7f65;
+  white-space: nowrap;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+#text > h2 {
+  font-size: 65px;
+  font-family: "Robuck Regular";
+  letter-spacing: 6px;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 5em;
+  background-image: linear-gradient(
+    90deg,
+    hsl(280deg 34% 65%),
+    45%,
+    hsl(351deg 72% 72%) 76%,
+    hsl(351deg 72% 72%)
+  );
+}
+#full-screen1 > img {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#step5 {
+  position: absolute;
+  z-index: 9999999;
+}
+
+#step4 {
+  z-index: 999999;
+}
+#step2 {
+  z-index: 999;
+}
+#step3 {
+  z-index: 999;
+
+}
+
+#step1 {
+  z-index: 99;
+}
+
+#bg1 {
+  z-index: 9;
+}
+
+#page3 {
+  position: relative;
+  width: 100vw;
+  height: 110vh;
+}
+
+#fs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 110vh;
+}
+
+#parallax-des {
+  width: 50%;
+  z-index: 999999999;
+  position: absolute;
+  top: 110%;
+  text-align: justify;
+
+  color: white;
+  font-family: "Gilroy";
+}
+#parallax-des > h1 {
+  margin-left: 33%;
+  font-size: 4em;
+  font-weight: 500;
+}
+#parallax-des > p {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+#fs > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40%;
+  object-fit: cover;
+}
+#one {
+  z-index: 999999;
+  margin-top: 6vh;
+}
+#two {
+  z-index: 9999;
+  margin-top: 6vh;
+}
+#three {
+  z-index: 999;
+  margin-top: 9vh;
+}
+
+#for {
+  z-index: 999;
+}
+
+#fs-h {
+  z-index: 999;
+}
+
+#gear {
+  position: absolute;
+  top: 56%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  left: 35%;
+}
+#bubbles {
+  z-index: 999;
+}
+#fish1 {
+  z-index: 9999;
+}
+#fish2 {
+  z-index: 9999;
+}
+.bub {
+  z-index: 9999;
+}
+#rock {
+  z-index: 99999;
+  margin-top: 68vh;
+}
+#fish-float {
+  z-index: 999;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+}
+
+.f1 {
+  animation: fish-dance 10s linear infinite;
+}
+.f2 {
+  animation: fish-dance1 15s linear infinite;
+}
+@keyframes fish-dance1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fish-dance {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#page4 {
+  position: relative;
+  width: 100vw;
+  height: 110vh;
+}
+
+#hd > img {
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#line {
+  z-index: 99999999;
+  position: absolute;
+  top: 200vh;
+  width: 0%;
+  height: 3px;
+  background-color: aqua;
+}
+
+#page5 {
+  width: 100vw;
+  height: 100vh;
+}
